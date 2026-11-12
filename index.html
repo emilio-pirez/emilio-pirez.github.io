@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emilio Pirez Perez | Finance &amp; Portfolio Analytics</title>
+<meta name="description" content="Emilio Pirez Perez: finance graduate focused on portfolio construction, implementation and Python-based investment tools. AMIB Figura 3 certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121417;--muted:#5b616b;--line:#e3e5e8;--bg:#fafaf9;--card:#fff;--accent:#1f4e79;--accent-soft:#e8eff6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;background:rgba(250,250,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .logo{font-weight:600;letter-spacing:1px;color:var(--ink)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+header{padding:88px 0 64px}
+header h1{font-size:44px;font-weight:500;letter-spacing:1px;line-height:1.15}
+header .tag{margin-top:10px;font-size:13px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+header p.lead{margin-top:24px;max-width:640px;font-size:17px;color:#2b2f35;font-weight:300}
+.btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-size:14px;font-weight:500;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:#fff}
+.btn:hover{text-decoration:none;opacity:.85}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+.card h3{font-size:18px;font-weight:500;margin-bottom:4px}
+.meta{font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+.card ul{padding-left:18px;font-size:14.5px;color:#2b2f35}
+.card ul li{margin-bottom:6px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.pill{font-size:12px;background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:20px}
+.status{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:4px;background:#fff4e0;color:#8a5a00;margin-left:8px;vertical-align:middle}
+.card .links{margin-top:16px;display:flex;gap:16px;font-size:14px;font-weight:500}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:18px 0 6px}
+.stat{border-left:3px solid var(--accent);padding-left:12px}
+.stat b{display:block;font-size:24px;font-weight:600}
+.stat span{font-size:12.5px;color:var(--muted)}
+.job{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:none}
+.job .when{font-size:14px;color:var(--muted)}
+.job h3{font-size:17px;font-weight:500}
+.job .role{font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
+.job ul{padding-left:18px;font-size:14.5px;color:#2b2f35}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.cert{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.cert b{display:block;font-weight:500}
+.cert span{font-size:13px;color:var(--muted)}
+.cert.featured{border-color:var(--accent);background:var(--accent-soft)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.skills h3{font-size:15px;font-weight:500;margin-bottom:8px}
+.skills ul{list-style:none;font-size:14.5px;color:#2b2f35}
+.skills li{padding:3px 0}
+footer{padding:56px 0 72px;border-top:1px solid var(--line)}
+footer .contact{display:flex;gap:28px;flex-wrap:wrap;font-size:15px}
+footer small{display:block;margin-top:28px;color:var(--muted);font-size:12px}
+@media(max-width:640px){
+  header h1{font-size:34px}
+  nav ul{gap:14px;font-size:13px}
+  nav ul li.hide-sm{display:none}
+  .job{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#">EPP</a>
+  <ul>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li class="hide-sm"><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header><div class="wrap">
+  <h1>Emilio Pirez Perez</h1>
+  <div class="tag">Finance &amp; Portfolio Analytics · Mexico</div>
+  <p class="lead">Finance graduate (Universidad de Monterrey, Dec 2026) building Python tools for portfolio construction, risk control and implementation. Currently monitoring investment portfolios at Salmo; previously Custom Index Intern at MSCI and CFO support at Lemancore. AMIB Figura 3 certified.</p>
+  <div class="btns">
+    <a class="btn primary" href="CV_Emilio_Pirez_Perez.pdf" target="_blank" rel="noopener">Download CV</a>
+    <a class="btn" href="https://www.linkedin.com/in/emilio-pirez-525b44311/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="#projects">See projects</a>
+  </div>
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card" style="grid-column:1/-1">
+      <h3>Custom Thematic Portfolios: Genetic Algorithm Guided by Risk Profiling</h3>
+      <div class="meta">Undergraduate thesis · Python · Team of 3 · 2026</div>
+      <p style="font-size:14.5px;color:#2b2f35">A client answers a risk-profiling questionnaire and picks the themes they want (sectors, styles, sizes). Their answers become an explicit, auditable objective function, and a genetic algorithm builds a 20–35 stock portfolio from the full U.S. market that respects the client's risk limits out of sample.</p>
+      <div class="stat-row">
+        <div class="stat"><b>94%</b><span>of quarters within all client risk limits</span></div>
+        <div class="stat"><b>66%</b><span>same-theme ETF mix, same test</span></div>
+        <div class="stat"><b>55%</b><span>Markowitz max-Sharpe, same test</span></div>
+        <div class="stat"><b>23% → 12%</b><span>turnover, with no return loss</span></div>
+      </div>
+      <ul style="margin-top:12px">
+        <li>Hard risk ceilings on beta, tracking error, maximum drawdown and CVaR, anchored to industry reference levels.</li>
+        <li>Long-only, ~4,900 U.S. stocks, sector/style/size constraints; data from FMP and FRED APIs.</li>
+        <li>Quarterly walk-forward backtest 2016–2026 with transaction costs and taxes; parameters calibrated only on 2010–2015.</li>
+      </ul>
+      <div class="pills"><span class="pill">Python</span><span class="pill">Genetic algorithms</span><span class="pill">Risk management</span><span class="pill">Backtesting</span><span class="pill">cvxpy</span><span class="pill">Streamlit</span></div>
+      <div class="links"><a href="https://algoritmogenetico-ksgd.onrender.com/" target="_blank" rel="noopener">Live app →</a></div>
+      <p style="font-size:12px;color:var(--muted);margin-top:6px">The live app runs on a free server and may take up to a minute to wake up.</p>
+    </div>
+
+    <div class="card" style="grid-column:1/-1">
+      <h3>Portfolio Implementation Toolkit <span class="status">In progress</span></h3>
+      <div class="meta">Personal project · Python · SQL</div>
+      <p style="font-size:14.5px;color:#2b2f35">A simplified simulation of a core portfolio manager's daily workflow: equitizing fund cash flows with index futures, generating rebalance baskets, running pre-trade compliance checks and monitoring cash drag and tracking error in a dashboard.</p>
+      <div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Futures equitization</span><span class="pill">Compliance controls</span><span class="pill">Streamlit</span></div>
+      <!-- When the repo is public, uncomment and set the URL:
+      <div class="links"><a href="https://github.com/YOUR_USER/portfolio-implementation-toolkit" target="_blank" rel="noopener">Code on GitHub →</a></div>
+      -->
+    </div>
+
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="when">2026 – Present</div>
+    <div>
+      <h3>Salmo</h3><div class="role">Portfolio Analyst</div>
+      <ul>
+        <li>Daily monitoring of investment portfolios: positions, performance and risk.</li>
+        <li>Loaded the portfolios into Bloomberg Terminal to analyze holdings, individual assets and market news.</li>
+        <li>Research and propose investment alternatives and solutions for each portfolio.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Jun 2025 – Jun 2026</div>
+    <div>
+      <h3>Lemancore</h3><div class="role">Finance Associate / CFO Support</div>
+      <ul>
+        <li>Direct support to the CFO, managing project accounts and cash tracking across multiple industries.</li>
+        <li>Prepared reports and executive presentations for senior management.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Feb 2025 – Feb 2026</div>
+    <div>
+      <h3>Pydiosa</h3><div class="role">Financial Analysis Support</div>
+      <ul>
+        <li>Investment analysis for machinery acquisition decisions.</li>
+        <li>Maintained accounting and financial records for new assets.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">May 2024 – Jan 2025</div>
+    <div>
+      <h3>MSCI</h3><div class="role">Custom Index Intern</div>
+      <ul>
+        <li>Contributed to the development and launch of a private-funds index, from methodology design to pre-launch review.</li>
+        <li>Structured index methodology rules and reviewed constituent data before market launch.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+  <h2>Education &amp; Certifications</h2>
+  <div class="certs">
+    <div class="cert featured"><b>AMIB Figura 3</b><span>Investment Strategy Advisor (Mexico) · 2026</span></div>
+    <div class="cert"><b>B.A. International Finance</b><span>Universidad de Monterrey (UDEM) · 2022–2026</span></div>
+    <div class="cert"><b>Fintech &amp; Data Science</b><span>Instituto de Estudios Bursátiles (IEB) · 2026</span></div>
+    <div class="cert"><b>Bloomberg</b><span>Certificate</span></div>
+    <div class="cert"><b>CME Group</b><span>Certificate</span></div>
+    <div class="cert"><b>IBM</b><span>Certificate</span></div>
+  </div>
+  <p style="margin-top:18px;font-size:14.5px"><a href="https://drive.google.com/drive/folders/1epejz2fvK1ltISHwLQ8z5aFLWjosNP52" target="_blank" rel="noopener">View all certificates →</a></p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Technical</h3><ul>
+      <li>Python: pandas, NumPy, cvxpy, Streamlit</li>
+      <li>API integration &amp; automation</li>
+      <li>Git / GitHub</li>
+      <li>Power BI, Advanced Excel</li>
+      <li>Bloomberg Terminal</li>
+    </ul></div>
+    <div><h3>Finance</h3><ul>
+      <li>Portfolio construction &amp; optimization</li>
+      <li>Risk limits: beta, tracking error, CVaR, drawdown</li>
+      <li>Walk-forward backtesting</li>
+      <li>Equities, ETFs &amp; derivatives</li>
+      <li>Valuation &amp; financial modeling</li>
+    </ul></div>
+    <div><h3>Languages</h3><ul>
+      <li>Spanish (native)</li>
+      <li>English (fluent)</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="contact">
+    <a href="mailto:emilio.pirez@icloud.com">emilio.pirez@icloud.com</a>
+    <a href="https://www.linkedin.com/in/emilio-pirez-525b44311/" target="_blank" rel="noopener">LinkedIn</a>
+    <span style="color:var(--muted)">Monterrey, Mexico</span>
+  </div>
+  <small>© 2026 Emilio Pirez Perez</small>
+</div></footer>
+
+</body>
+</html>
