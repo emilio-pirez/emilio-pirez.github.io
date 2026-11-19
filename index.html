@@ -118,6 +118,26 @@ footer small{display:block;margin-top:28px;color:var(--muted);font-size:12px}
     </div>
 
     <div class="card" style="grid-column:1/-1">
+      <h3>Equity Execution &amp; TCA Toolkit</h3>
+      <div class="meta">Personal project · Python · SQL · 2026</div>
+      <p style="font-size:14.5px;color:#2b2f35">What does it cost to execute a large equity order in Mexico versus the U.S.? The toolkit measures liquidity from 1-minute bars for five BMV names, IVV and Apple. It then replays TWAP, VWAP, POV and Implementation Shortfall orders against every session with a square-root impact model, and breaks each order's cost into spread, impact, timing and opportunity.</p>
+      <div class="stat-row">
+        <div class="stat"><b>~400×</b><span>more USD per bp of price move in U.S. names than in Mexican names</span></div>
+        <div class="stat"><b>~49%</b><span>of Mexican daily volume visible on the continuous order book</span></div>
+        <div class="stat"><b>1.6× / 3.2×</b><span>opening vs midday spread, Mexico / U.S.</span></div>
+        <div class="stat"><b>−19% risk</b><span>for +6 bps of cost, front-loading a 10%-ADV Banorte order</span></div>
+      </div>
+      <ul style="margin-top:12px">
+        <li>Bid-ask spreads estimated without quotes (Corwin-Schultz, Roll) and stress-tested on synthetic data with a known spread; validation against Bloomberg quoted spreads is next.</li>
+        <li>Almgren-Chriss efficient frontier of impact vs timing risk; cost benchmarks vs arrival, interval VWAP and close.</li>
+        <li>Data-quality fixes for BMV hours that shift with U.S. daylight time, the last BMV hour missing from public data, and bad volume prints. SQLite TCA queries, 36 unit tests, reproducible pipeline.</li>
+      </ul>
+      <div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Best execution</span><span class="pill">Market microstructure</span><span class="pill">TCA</span><span class="pill">Streamlit</span></div>
+      <div class="links"><a href="https://equity-execution-tca-toolkit.streamlit.app/" target="_blank" rel="noopener">Live app →</a><a href="https://github.com/emilio-pirez/Equity-Execution-TCA-Toolkit" target="_blank" rel="noopener">Code on GitHub →</a></div>
+      <p style="font-size:12px;color:var(--muted);margin-top:6px">The live app may take a few seconds to wake up.</p>
+    </div>
+
+    <div class="card" style="grid-column:1/-1">
       <h3>Portfolio Implementation Toolkit</h3>
       <div class="meta">Personal project · Python · SQL</div>
       <p style="font-size:14.5px;color:#2b2f35">A simplified simulation of a core portfolio manager's daily workflow: equitizing fund cash flows with index futures, generating rebalance baskets, running pre-trade compliance checks and monitoring cash drag and tracking error in a dashboard.</p>
